@@ -1,1 +1,2 @@
 # InsuranceApp
+Develop a user interface that a client will see when they select a type insurance in the checkout of their purchase. Build a database to collect this data. Note, this interface should collect the minimum amount of client information to be able to quote a premium quickly to a client. If the client decides to proceed with the policy they will be required to submit additional information and only then will a record be created in the policies database. Our insurance type is a phone insurance policy. 
