@@ -1,7 +1,7 @@
 import React, { useState, useContext} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-    Form, Button
+    Form, Button, Modal
 } from 'react-bootstrap';
 
 
@@ -19,22 +19,26 @@ function FormPage() {
     const [phoneBrand, setPhoneBrand] = useState();
     const [phoneCondition, setPhoneCondition] = useState();
     const [email, setEmail] = useState();
+    const [total, setTotal] = useState();
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () =>  setShow(true)
 
-    var total = 100;
 
     const submit = async (e) => {
         e.preventDefault();
-
+        var addUp = 100;
         if (phoneBrand == "apple")
-            total = total + 25;
+            addUp = addUp + 25;
         if (phoneCondition == "2")
-            total = total + 20;
+            addUp = addUp + 20;
         if (phoneCondition == "3")
-            total = total + 40;
-
-
+            addUp = addUp + 40;
+        
+        setTotal(addUp);
         console.log("Your coverage cost would be : $" +total + " would you like us to send you your offer to: "+email);
-
+        handleShow();
+  
     };
 
 
@@ -76,6 +80,21 @@ function FormPage() {
                     <Button align="middle" variant="secondary" type="submit" block>
                         Get Quote
                             </Button>
+
+                    <Modal show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Like Your Quote?!</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Your coverage cost would be: ${total}. Would you like us to send you your offer to: {email}?</Modal.Body>
+                        <Modal.Footer>
+                            <Button variant="secondary" onClick={handleClose}>
+                                Close
+          </Button>
+                            <Button variant="primary" onClick={handleClose}>
+                                Send Me My Offer
+          </Button>
+                        </Modal.Footer>
+                    </Modal>
                 </Form.Group>
          
 

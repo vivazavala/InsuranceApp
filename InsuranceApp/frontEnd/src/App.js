@@ -58,12 +58,10 @@ function App() {
           
                 </ul>
               
-                <p style={{ color: 'white', fontSize: '28px', position: 'absolute', left: '4%', top: '62%' }}>
-                    Get Your One Year of Coverage today &#10003;</p>
+                <p style={{ color: 'white', fontSize: '28px', position: 'absolute', left: '5%', top: '62%' }}>
+                    Get Your Year of Coverage today &#10003;</p>
                     <FormPage />
-                
-
-
+              
      </div>
             </Router>
   );
