@@ -15,24 +15,25 @@ var sectionStyle = {
 }
 var headerStyle = {
     color: 'white',
-    fontSize: '60px',
+    fontSize: '55px',
     textAlign: 'center'
 }
 var textStyle = {
     color: 'white',
-    fontSize: '20px',
+    fontSize: '18px',
     textAlign: 'center'
 }
 
 var leftList ={
     color: 'white',
-    fontSize: '25px',
+    fontSize: '30px',
 }
 
 var ul = {
     color: 'white',
-    fontSize: '35px',
-    listStyle: 'inside'
+    fontSize: '45px',
+    listStyle: 'inside',
+    position: 'absolute', left: '5%', top: '22%'
 }
 
 
@@ -43,18 +44,22 @@ function App() {
                
                 <h1 style={headerStyle}>My Phone Wearhouse Inc.</h1>
                 <h5 style={textStyle}>Partnered with AIG - We Cover</h5>
-                <br></br>
-                <br></br>
-             
-               
+                <br /><br />
+                <br /><br />
+          
+
                 <ul style={ul}>
                     What We Cover?
 
-                    <li style={leftList}>list</li>
-                    <li style={leftList}>list</li>
-                    <li style={leftList}>list</li>
-                    <li style={leftList}>list</li>
+                    <li style={leftList}>Cracked Screens</li>
+                    <li style={leftList}>Loss and Theft</li>
+                    <li style={leftList}>Minimal Water Damage</li>
+                    <li style={leftList}>Battery Replacement</li>
+          
                 </ul>
+              
+                <p style={{ color: 'white', fontSize: '28px', position: 'absolute', left: '4%', top: '62%' }}>
+                    Get Your One Year of Coverage today &#10003;</p>
                     <FormPage />
                 
 
