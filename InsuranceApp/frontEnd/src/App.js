@@ -42,7 +42,7 @@ function App() {
       <Router>
             <div className="App" style={sectionStyle}>
                
-                <h1 style={headerStyle}>My Phone Wearhouse Inc.</h1>
+                <h1 style={headerStyle}>My Phone Warehouse Inc.</h1>
                 <h5 style={textStyle}>Partnered with AIG - We Cover</h5>
                 <br /><br />
                 <br /><br />
