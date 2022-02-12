@@ -4,8 +4,9 @@
     "\\frontEnd",
     "\\frontEnd\\public",
     "\\frontEnd\\src",
-    "\\frontEnd\\src\\addOns"
+    "\\frontEnd\\src\\addOns",
+    "\\frontEnd\\src\\Components"
   ],
-  "SelectedNode": "\\frontEnd\\src\\index.js",
+  "SelectedNode": "\\frontEnd\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
